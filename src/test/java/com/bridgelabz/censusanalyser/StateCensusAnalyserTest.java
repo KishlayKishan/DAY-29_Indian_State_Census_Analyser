@@ -14,7 +14,7 @@ public class StateCensusAnalyserTest {
 	public void GivenTheStateCodesCsvFile_IfHasCorrectNumberOfRecords_ShouldReturnTrue() throws IOException {
 		try {
 			int count = StateCensusAnalyser.openCsvBuilder(STATE_CENSUS_CSV_PATH, StateCensus.class);
-			// System.out.println(count);
+//            System.out.println(count);
 			Assert.assertEquals(29, count);
 		} catch (CensusAnalyserException e) {
 			e.printStackTrace();
